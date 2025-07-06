@@ -23,6 +23,9 @@ jobs:
           distribution: 'temurin' # Fix: specify a valid distribution like 'temurin'
           java-version: '11'
 
+      - name: Create missing directories
+        run: mkdir -p src/test/resources
+
       - name: Build with Maven
         run: mvn clean install
 
