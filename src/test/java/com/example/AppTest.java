@@ -5,10 +5,8 @@ public class AppTest {
 
     @Test
     public void testMainMethod() {
-        // Assuming App has a method called getGreeting that returns a greeting message
-        App app = new App();
-        String expected = "Hello, World!";
-        String actual = app.getGreeting();
+        String expected = "Hello, Maven!";
+        String actual = App.getGreeting();
         assertEquals(expected, actual);
     }
 }
